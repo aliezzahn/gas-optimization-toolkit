@@ -1,0 +1,33 @@
+{
+  "name": "@aliezzahn/gas-optimization-toolkit",
+  "module": "src/index.ts",
+  "version": "1.0.0",
+  "author": "aliezzahn",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.13.2"
+  },
+  "scripts": {
+    "build": "bun run tsc",
+    "prepublish": "bun run build",
+    "test": "bun test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliezzahn/gas-optimization-toolkit.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "ethers": "^6.13.5"
+  }
+}
