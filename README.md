@@ -3,7 +3,6 @@
 [![Test](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/test.yml/badge.svg)](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/test.yml)
 [![CI](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/ci.yml)
 [![Release](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/release.yml/badge.svg)](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/release.yml)
-[![CD](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/cd.yml/badge.svg)](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/cd.yml)
 
 
 A toolkit to help developers optimize gas usage in Ethereum smart contracts and transactions. Built with **Bun.js** and **TypeScript**, this package provides utilities for gas estimation, gas price recommendations, Solidity code analysis, and gas token integration.
