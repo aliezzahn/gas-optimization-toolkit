@@ -1,6 +1,8 @@
 # Gas Optimization Toolkit 🛠️
 
+[![Test](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/test.yml/badge.svg)](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/test.yml)
 [![CI](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/ci.yml)
+[![Release](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/release.yml/badge.svg)](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/release.yml)
 [![CD](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/cd.yml/badge.svg)](https://github.com/aliezzahn/gas-optimization-toolkit/actions/workflows/cd.yml)
 
 
