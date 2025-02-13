@@ -15,17 +15,31 @@ A toolkit to help developers optimize gas usage in Ethereum smart contracts and 
 
 ## **Installation**
 
-Install the package using npm or bun:
+### From GitHub Packages
 
-```bash
-npm install gas-optimization-toolkit
-```
+This package is published to **GitHub Packages**. To install it:
 
-Or:
+1. **Create a `.npmrc` file**:
+   In your project folder, create a file named `.npmrc` and add the following line:
+   ```
+   @aliezzahn:registry=https://npm.pkg.github.com
+   ```
 
-```bash
-bun add gas-optimization-toolkit
-```
+3. **Install the package**:
+   Run the following command to install Web3 Utils:
+   ```bash
+   # Using Bun
+   bun add @aliezzahn/gas-optimization-toolkit
+   
+   # Using npm
+   npm install @aliezzahn/gas-optimization-toolkit
+   
+   # Using yarn
+   yarn add @aliezzahn/gas-optimization-toolkit
+   
+   # Using pnpm
+   pnpm add @aliezzahn/gas-optimization-toolkit
+   ```
 
 ---
 
@@ -36,7 +50,7 @@ bun add gas-optimization-toolkit
 Estimate the gas required for a transaction:
 
 ```typescript
-import { estimateGas } from "gas-optimization-toolkit";
+import { estimateGas } from "@aliezzahn/gas-optimization-toolkit";
 import { ethers } from "ethers";
 
 const provider = new ethers.JsonRpcProvider("https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID");
@@ -56,7 +70,7 @@ console.log(`Gas estimate: ${gasEstimate}`);
 Get gas price recommendations based on network congestion:
 
 ```typescript
-import { getGasPriceRecommendation } from "gas-optimization-toolkit";
+import { getGasPriceRecommendation } from "@aliezzahn/gas-optimization-toolkit";
 
 const gasPrices = await getGasPriceRecommendation();
 console.log(`Low: ${gasPrices.low}, Medium: ${gasPrices.medium}, High: ${gasPrices.high}`);
@@ -69,7 +83,7 @@ console.log(`Low: ${gasPrices.low}, Medium: ${gasPrices.medium}, High: ${gasPric
 Analyze Solidity code for gas optimization opportunities:
 
 ```typescript
-import { analyzeGasUsage } from "gas-optimization-toolkit";
+import { analyzeGasUsage } from "@aliezzahn/gas-optimization-toolkit";
 
 const solidityCode = `
   contract Test {
@@ -87,12 +101,12 @@ warnings.forEach((warning) => console.log(warning));
 
 ---
 
-### **4. Gas Token Integration**
+### **4. Gas Token Integration (Soon)**
 
 Mint gas tokens to reduce transaction costs:
 
 ```typescript
-import { mintGasToken } from "gas-optimization-toolkit";
+import { mintGasToken } from "@aliezzahn/gas-optimization-toolkit";
 import { ethers } from "ethers";
 
 const provider = new ethers.JsonRpcProvider("https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID");
