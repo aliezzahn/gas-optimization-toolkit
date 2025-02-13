@@ -23,9 +23,7 @@ jobs:
       - name: Build project
         run: bun run build
 
-      - name: Publish to npm
+      - name: Publish to GitHub Packages
         run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc
           npm publish
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
